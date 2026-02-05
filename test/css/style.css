@@ -1,0 +1,40 @@
+/* Officer balls */
+:root{
+    --content-background-color: rgba(255, 255, 255, 0.85);
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+header{
+    /* background-color: rgba(255, 255, 255, 0.75); */
+    background-color: var(--content-background-color);
+}
+
+header > p{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main{
+    background-color: var(--content-background-color);
+}
+
+footer{
+    background-color: var(--content-background-color);
+}
+
+h1{
+    color: #777777;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2, h3{
+    font-family: cursive;
+}
+
+h2{
+    color: green;
+}
