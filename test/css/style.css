@@ -1,25 +1,29 @@
-/* Officer balls */
+/* is your multi line comment */
+/* variable examples */
 :root{
-    --content-background-color: rgba(255, 255, 255, 0.85);
+    --content-background-color: rgba(255,255,255,0.85);
     --pagewidth: 960px;
 }
 
 /* Reset some default browser styles */
-/* * {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-} */
+    box-sizing: border-box; /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
+}
+
 
 body{
     background-color: cornflowerblue;
 }
-
 header{
-    /* background-color: rgba(255, 255, 255, 0.75); */
+    /* background-color: rgba(255,255,255,0.75); */
     background-color: var(--content-background-color);
+    /* width: 960px; */
     width: var(--pagewidth);
-    padding: 20px;
+    /* width: 80%; */
+    padding: 20px; 
+    /* Add 20px of padding top right bottom left edges */
     border-width: 5px;
     border-style: solid;
     border-color: blue;
@@ -27,44 +31,85 @@ header{
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 header > p{
     text-align: center;
     font-family: sans-serif;
+    /* display: inline-block; */
+}
+
+nav{
+
+}
+
+nav > ul{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: end;
+    align-items: center;
+}
+
+nav > ul > li{
+    padding: 30px;
+    list-style: none;
+    background-color: aquamarine;
+
+
+}
+
+nav > ul > li > a{
+    color: black;
+    font-size: 20px;
+    font-family: serif;
+    text-decoration: none;
+}
+
+nav > ul > li:hover{
+    background-color: green;
 }
 
 main{
     background-color: var(--content-background-color);
     width: var(--pagewidth);
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    border-top-width: 10px;
+    padding-left: 40px;
+    border-top-width: 20px;
     border-top-style: dotted;
     border-top-color: white;
     margin: 0px auto;
+    /* margin: top/bottom left/right */
 }
 
 footer{
     background-color: var(--content-background-color);
-    width: var(--pagewidth);
-    border: 10px solid green;
+    width: var(--pagewidth) ;
     height: 50px;
-    margin: 0px auto;
+    border: 10px solid green;
+    padding: 20px;
+    margin: 0 auto;
     margin-top: 50px;
-
 }
 
 h1{
+    /* background-color: #333333; */
     color: #777777;
     text-align: center;
     text-decoration: underline;
 }
-
+/* adding a , adds the property to the tag */
 h2, h3{
-    font-family: cursive;
+    font-family: cursive; /* serif, sans-serif, monospace, fantasy,  */
 }
 
 h2{
