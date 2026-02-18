@@ -115,3 +115,45 @@ h2, h3{
 h2{
     color: green;
 }
+
+.grid1{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid3{
+    height: 400px;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: end;
+    align-content: center;
+    align-items: end;
+    background-color: blueviolet;
+}
+
+.grid3 p{
+    background-color: azure;
+}
+
+.gid4{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#section2{
+    color:firebrick;
+    background-color: chocolate;
+}
