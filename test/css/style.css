@@ -1,5 +1,8 @@
 /* is your multi line comment */
 /* variable examples */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --content-background-color: rgba(255,255,255,0.85);
     --pagewidth: 960px;
@@ -62,8 +65,6 @@ nav > ul > li{
     padding: 30px;
     list-style: none;
     background-color: aquamarine;
-
-
 }
 
 nav > ul > li > a{
@@ -106,6 +107,9 @@ h1{
     color: #777777;
     text-align: center;
     text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
 }
 /* adding a , adds the property to the tag */
 h2, h3{
