@@ -15,10 +15,10 @@
     box-sizing: border-box; /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
 }
 
-
 body{
     background-color: cornflowerblue;
 }
+
 header{
     /* background-color: rgba(255,255,255,0.75); */
     background-color: var(--content-background-color);
@@ -34,17 +34,12 @@ header{
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 header > p{
     text-align: center;
     font-family: sans-serif;
     /* display: inline-block; */
-}
-
-nav{
-
 }
 
 nav > ul{

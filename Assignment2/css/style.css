@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+:root{
+    --heading-font: 'Uncial Antiqua', serif;
+}
+
+nav > ol{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-content: center;
+    align-items: center;
+}
+
+nav > ol > li{
+    padding: 10px;
+    width: auto;
+    height: 100px;
+    list-style: none;
+    text-align: center;
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+nav > ol > li > a{
+    color: black;
+    font-size: 20px;
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+}
+
+nav > ol > li:hover{
+    background-color: blueviolet;
+    transition: all 0.5s ease;
+}
+
+/* h1{
+    font-family: var(--heading-font);
+    text-align: center;
+    color: blueviolet;
+}
+
+h2{
+    font-family: var(--heading-font);
+    text-align: center;
+    color: blueviolet;
+} */
+
+.heading{
+    font-family: var(--heading-font);
+    text-align: center;
+    color: blueviolet;
+}
+
+.elf{
+    background-color: mediumspringgreen;
+}
+
+.færie{
+    background-color: lightpink;
+}
+
+figure{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+}
+
+img{
+    display: block;
+    border-radius: 8px;
+}
+
+figcaption{
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+}
+
+p{
+    text-align: justify;
+    font-family: serif;
+    margin: 20px;
+}
+
+#chars > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#chars > ul > li {
+    padding: 15px;
+    border-radius: 8px;
+}
