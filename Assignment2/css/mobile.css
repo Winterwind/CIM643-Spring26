@@ -1,0 +1,38 @@
+@import "style.css";
+
+.heading{
+    align-content: center;
+}
+
+nav{
+    width: 90%;
+    align-content: center;
+    align-items: center;
+}
+
+nav > ol {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+nav > ol > li {
+    width: auto;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption{
+    max-width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+#chars > ul {
+    grid-template-columns: 1fr;
+}
