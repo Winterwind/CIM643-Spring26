@@ -23,10 +23,10 @@ const qa =  [
         }
     ];//array of objects
 
-let currentQuestion = 0;
+let currentQuestion = nextQuestion();
 let score = 0;
 console.log(qa[currentQuestion].question);
-document.getElementById("question").innerHTML = qa[currentQuestion].question;
+document.getElementById("question").innerHTML = currentQuestion.question;
 
 // when I press submit, I want to check the answer and display if it is correct or not, and then go to the next question
 
@@ -34,48 +34,46 @@ let submitButton = document.getElementById("submit");
 let result = document.getElementById("result");
 
 submitButton.addEventListener('click', function() {
-    // const selected = document.querySelector('input[name="option"]:checked');
-    // console.log(selected.value);
-    // if (selected.value === qa[currentQuestion].answer) {
-    //     console.log("correct");
-    //     result.innerHTML = "correct";
-    //     increaseScore();
-    //     nextQuestion();
-    //     updateQuestion();
-    // } else {
-    //     console.log("incorrect");
-    //     result.innerHTML = "incorrect";
-    //     decreaseScore();
-    //     nextQuestion();
-    //     updateQuestion();
-    // }
-
-    if (checkAnswer()) {
-        increaseScore();
-        nextQuestion();
-        updateQuestion();
+    if (currentQuestion != null) {
+        if (checkAnswer()) {
+            increaseScore();
+            currentQuestion = nextQuestion();
+            updateQuestion();
+        } else {
+            decreaseScore();
+            currentQuestion = nextQuestion();
+            updateQuestion();
+        }
     } else {
-        decreaseScore();
-        nextQuestion();
-        updateQuestion();
+        document.getElementById("question").innerHTML = "Game over";
     }
 });
 
 function checkAnswer() {
     const selected = document.querySelector('input[name="option"]:checked');
     console.log(selected.value);
-    return selected.value === qa[currentQuestion].answer;
+    return selected.value === currentQuestion.answer;
 }
 
 function nextQuestion() {
-    currentQuestion++;
-    if (currentQuestion == qa.length) {
-        currentQuestion = 0;
+    // currentQuestion++;
+    // if (currentQuestion == qa.length) {
+    //     currentQuestion = 0;
+    // }
+
+    if (qa.length == 0) {
+        return qa.pop();
+    } else {
+        return null;
     }
 }
 
 function updateQuestion() {
-    document.getElementById("question").innerHTML = qa[currentQuestion].question;
+    if (currentQuestion != null) {
+        document.getElementById("question").innerHTML = currentQuestion.question;
+    } else {
+        document.getElementById("question").innerHTML = "Game over";
+    }
 }
 
 function increaseScore() {
