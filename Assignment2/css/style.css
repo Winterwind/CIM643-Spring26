@@ -43,21 +43,9 @@ nav > ol > li > a{
 }
 
 nav > ol > li:hover{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     transition: all 0.5s ease;
 }
-
-/* h1{
-    font-family: var(--heading-font);
-    text-align: center;
-    color: blueviolet;
-}
-
-h2{
-    font-family: var(--heading-font);
-    text-align: center;
-    color: blueviolet;
-} */
 
 .heading{
     font-family: var(--heading-font);
@@ -82,6 +70,10 @@ figure{
 img{
     display: block;
     border-radius: 8px;
+}
+
+.zoomed{
+    transform: scale(2);
 }
 
 figcaption{
