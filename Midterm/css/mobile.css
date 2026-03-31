@@ -1,0 +1,36 @@
+/* Adjust Layout to be responsive */
+
+@import url(style.css);
+
+nav > ul{
+    width: 225%;
+    padding: 0px;
+}
+
+.level > ul{
+    width: 225%;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.heading{
+    width: 225%;
+    align-content: center;
+    align-items: center;
+}
+
+p{
+    width: 225%;
+    margin: 0%;
+}
+
+#beyond > ul{
+    width: 210%;
+    margin: 0%;
+}
